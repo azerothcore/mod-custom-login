@@ -87,17 +87,6 @@ public:
     void OnBeforeConfigLoad(bool reload) override
     {
         if (!reload) {
-            std::string conf_path = _CONF_DIR;
-            std::string cfg_file = conf_path + "/mod_customlogin.conf";
-
-#ifdef WIN32
-            cfg_file = "mod_customlogin.conf";
-#endif
-
-            std::string cfg_def_file = cfg_file + ".dist";
-            sConfigMgr->LoadMore(cfg_def_file.c_str());
-            sConfigMgr->LoadMore(cfg_file.c_str());
-
             // Load Configuration Settings
             SetInitialWorldSettings();
         }
