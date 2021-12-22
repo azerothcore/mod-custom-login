@@ -95,24 +95,24 @@ public:
     // Load Configuration Settings
     void SetInitialWorldSettings()
     {
-        LoginEnable = sConfigMgr->GetBoolDefault("Login.Enable", 1);
-        LoginAnnounceModule = sConfigMgr->GetBoolDefault("Login.Announce", 1);
-        LoginPlayerAnnounce = sConfigMgr->GetBoolDefault("Login.PlayerAnnounce", 1);
-        LoginBOA = sConfigMgr->GetBoolDefault("Login.BoA", 1);
-        LoginBOARing = sConfigMgr->GetBoolDefault("Login.BoA.Ring", 1);
-        LoginBOABags = sConfigMgr->GetBoolDefault("Login.BoA.Bags",1);
-        LoginBOAShoulders = sConfigMgr->GetBoolDefault("Login.BoA.Shoulders", 1);
-        LoginBOAShoulders2 = sConfigMgr->GetBoolDefault("Login.BoA.Shoulders2",1);
-        LoginBOAChest = sConfigMgr->GetBoolDefault("Login.BoA.Chest",1);
-        LoginBOAChest2 = sConfigMgr->GetBoolDefault("Login.BoA.Chest2",1);
-        LoginBOATrinket = sConfigMgr->GetBoolDefault("Login.BoA.Trinket",1);
-        LoginBOATrinket2 = sConfigMgr->GetBoolDefault("Login.BoA.Trinket2",1);
-        LoginBOAWeapon = sConfigMgr->GetBoolDefault("Login.BoA.Weapon",1);
-        LoginBOAWeapon2 = sConfigMgr->GetBoolDefault("Login.BoA.Weapon2",1);
-        LoginBOAWeapon3 = sConfigMgr->GetBoolDefault("Login.BoA.Weapon3",1);
-        LoginSkills = sConfigMgr->GetBoolDefault("Login.Skills", 1);
-        LoginSpecialAbility = sConfigMgr->GetBoolDefault("Login.SpecialAbility", 1);
-        LoginReputation = sConfigMgr->GetBoolDefault("Login.Reputation", 1);
+        LoginEnable = sConfigMgr->GetOption<bool>("Login.Enable", 1);
+        LoginAnnounceModule = sConfigMgr->GetOption<bool>("Login.Announce", 1);
+        LoginPlayerAnnounce = sConfigMgr->GetOption<bool>("Login.PlayerAnnounce", 1);
+        LoginBOA = sConfigMgr->GetOption<bool>("Login.BoA", 1);
+        LoginBOARing = sConfigMgr->GetOption<bool>("Login.BoA.Ring", 1);
+        LoginBOABags = sConfigMgr->GetOption<bool>("Login.BoA.Bags",1);
+        LoginBOAShoulders = sConfigMgr->GetOption<bool>("Login.BoA.Shoulders", 1);
+        LoginBOAShoulders2 = sConfigMgr->GetOption<bool>("Login.BoA.Shoulders2",1);
+        LoginBOAChest = sConfigMgr->GetOption<bool>("Login.BoA.Chest",1);
+        LoginBOAChest2 = sConfigMgr->GetOption<bool>("Login.BoA.Chest2",1);
+        LoginBOATrinket = sConfigMgr->GetOption<bool>("Login.BoA.Trinket",1);
+        LoginBOATrinket2 = sConfigMgr->GetOption<bool>("Login.BoA.Trinket2",1);
+        LoginBOAWeapon = sConfigMgr->GetOption<bool>("Login.BoA.Weapon",1);
+        LoginBOAWeapon2 = sConfigMgr->GetOption<bool>("Login.BoA.Weapon2",1);
+        LoginBOAWeapon3 = sConfigMgr->GetOption<bool>("Login.BoA.Weapon3",1);
+        LoginSkills = sConfigMgr->GetOption<bool>("Login.Skills", 1);
+        LoginSpecialAbility = sConfigMgr->GetOption<bool>("Login.SpecialAbility", 1);
+        LoginReputation = sConfigMgr->GetOption<bool>("Login.Reputation", 1);
     }
 };
 
