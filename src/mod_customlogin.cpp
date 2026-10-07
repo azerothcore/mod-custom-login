@@ -566,7 +566,7 @@ public:
         if (LoginEnable)
         {
             // If enabled..
-            if (LoginPlayerAnnounce)
+            if (LoginPlayerAnnounce && player->GetSession() && !player->GetSession()->IsHeadless())
             {
                 // Announce Player Login
                 if (player->GetTeamId() == TEAM_ALLIANCE)
@@ -590,7 +590,7 @@ public:
         if (LoginEnable)
         {
             // If enabled..
-            if (LoginPlayerAnnounce)
+            if (LoginPlayerAnnounce && player->GetSession() && !player->GetSession()->IsHeadless())
             {
                 // Announce Player Login
                 if (player->GetTeamId() == TEAM_ALLIANCE)
